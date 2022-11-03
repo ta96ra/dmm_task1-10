@@ -1,0 +1,78 @@
+/*共通*/
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
+h3,p{
+  margin: 0;
+}
+
+/*ヘッダー*/
+header{
+  width: 100%;
+  height: 50px;
+  background: #ff9a4b;
+}
+
+/*メインコンテンツ*/
+main{
+  padding: 50px 0;
+}
+.items{
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.item{
+  position: relative;
+  width: calc(100% / 3);
+  padding: 10px;
+  background: #eee;
+}
+
+.item:nth-of-type(2){
+  margin: 0 30px;
+}
+.item .img{
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.item:nth-of-type(1) .img{
+  background-image: url(img/flow01.png);
+}
+.item:nth-of-type(2) .img{
+  background-image: url(img/flow02.png);
+}
+.item:nth-of-type(3) .img{
+  background-image: url(img/flow03.png);
+}
+.item .tag{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: #ff9a4b;  
+}
+
+.item h3{
+  padding-top: 15px;
+}
+.item p{
+  padding-top: 5px;  
+}
+
+/*フッター*/
+footer{
+  height: 50px;
+  background: #aaa;
+}
+
+/*レスポンシブ */
+@media screen and (max-width: 768px){
+  
+}
